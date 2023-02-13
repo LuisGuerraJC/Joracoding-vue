@@ -1,0 +1,42 @@
+[
+    {
+      "serviceName": "Redes Sociales",
+      "price": 120,
+      "features": "lorem ipsum dolor sit amet, consetetur"
+    },
+    {
+      "serviceName": "Logos",
+      "price": 1260,
+      "features": "lorem ipsum dolor sit amet, consetetur"
+    },
+    {
+      "serviceName": "Tarjeta de presentación",
+      "price": 60,
+      "features": "lorem ipsum dolor sit amet, consetetur"
+    },
+    {
+      "serviceName": "Tarjeta de presentación",
+      "price": 60,
+      "features": "lorem ipsum dolor sit amet, consetetur"
+    },
+    {
+      "serviceName": "Flyers",
+      "price": 90,
+      "features": "lorem ipsum dolor sit amet, consetetur"
+    },
+    {
+      "serviceName": "Brochure",
+      "price": 120,
+      "features": "lorem ipsum dolor sit amet, consetetur"
+    },
+    {
+      "serviceName": "Hoja membretada",
+      "price": 60,
+      "features": "lorem ipsum dolor sit amet, consetetur"
+    },
+    {
+      "serviceName": "Hoja membretada",
+      "price": 60,
+      "features": "lorem ipsum dolor sit amet, consetetur"
+    }
+]

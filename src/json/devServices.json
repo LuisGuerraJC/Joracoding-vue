@@ -1,0 +1,51 @@
+[
+    {
+      "serviceName": "Pagina Web",
+      "price": 500,
+      "features": [
+        "Diseño moderno",
+        "Adaptable a móviles",
+        "hasta 4 internas",
+        "integracion a redes sociales",
+        "integración de video e imágenes",
+        "integración a google",
+        "mapa de google",
+        "Botón de whatsapp",
+        "slider animado",
+        "código fuente"
+      ]
+    },
+    {
+      "serviceName": "Sitio Web",
+      "price": 870,
+      "features": [
+        "Diseño moderno",
+        "Adaptable a móviles",
+        "hasta 8 internas",
+        "integracion a redes sociales",
+        "integración de video e imágenes",
+        "integración a google",
+        "mapa de google",
+        "Botón de whatsapp",
+        "slider animado",
+        "código fuente"
+      ]
+    },
+    {
+      "serviceName": "Sitio administrable",
+      "price": 1200,
+      "features": [
+        "Diseño moderno",
+        "Adaptable a móviles",
+        "hasta 8 internas",
+        "integracion a redes sociales",
+        "integración de video e imágenes",
+        "integración a google",
+        "mapa de google",
+        "Botón de whatsapp",
+        "slider animado",
+        "código fuente",
+        "panel de control"
+      ]
+    }
+]
