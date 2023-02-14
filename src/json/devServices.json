@@ -1,7 +1,7 @@
 [
     {
-      "serviceName": "Pagina Web",
-      "price": 500,
+      "serviceName": "Básico",
+      "price": 599,
       "features": [
         "Diseño moderno",
         "Adaptable a móviles",
@@ -16,8 +16,8 @@
       ]
     },
     {
-      "serviceName": "Sitio Web",
-      "price": 870,
+      "serviceName": "Éstandar",
+      "price": 899,
       "features": [
         "Diseño moderno",
         "Adaptable a móviles",
@@ -32,8 +32,8 @@
       ]
     },
     {
-      "serviceName": "Sitio administrable",
-      "price": 1200,
+      "serviceName": "Premium",
+      "price": 1500,
       "features": [
         "Diseño moderno",
         "Adaptable a móviles",

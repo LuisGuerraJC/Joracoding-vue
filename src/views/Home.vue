@@ -1,12 +1,13 @@
 <template>
   <div>
-    <Social :topPadding="spacingTop"></Social>
     <NavbarVue ref="height"></NavbarVue>
-    <InicioVue :topPadding="spacingTop"></InicioVue>
-    <NosotrosVue :topPadding="spacingTop"></NosotrosVue>
-    <ServiciosVue :topPadding="spacingTop"></ServiciosVue>
-    <PortafolioVue :topPadding="spacingTop"></PortafolioVue>
+    <InicioVue></InicioVue>
+    <NosotrosVue></NosotrosVue>
+    <ServiciosVue></ServiciosVue>
+    <ComentariosVue></ComentariosVue>
+    <!-- <PortafolioVue :topPadding="spacingTop"></PortafolioVue> -->
     <ContactoVue :topPadding="spacingTop"></ContactoVue>
+    <FooterVue></FooterVue>
   </div>
 </template>
 
@@ -18,9 +19,10 @@ import {
   PortafolioVue,
   ServiciosVue,
   ContactoVue,
+  ComentariosVue,
+  FooterVue,
 } from "@/components/sections";
 import NavbarVue from "@/components/Navbar.vue";
-import Social from "@/components/Social.vue";
 
 const height = ref<any>(undefined);
 

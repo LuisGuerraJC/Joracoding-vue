@@ -23,6 +23,8 @@ module.exports = {
       },
       fontFamily:{
         condensed:"'Oswald', sans-serif",
+        poppins:"'Poppins', sans-serif"
+
       }
     }
   },

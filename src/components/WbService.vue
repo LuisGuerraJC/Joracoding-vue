@@ -1,24 +1,36 @@
 <template>
   <div
-    class="group border-[1px] border-cyan-900 text-white h-full my-3 mx-2 py-10 px-8 flex flex-col justify-between max-h-[720px] hover:bg-cyan-900 overflow-y-hidden transition-colors duration-150 shadow-md shadow-cyan-900"
-    :class="{ 'bg-cyan-900': center === 1 }"
+    class="text-white h-full my-3 mx-2 pt-8 pb-4 px-8 flex flex-col justify-between min-h-[712px] max-h-[800px] hover:bg-black hover:scale-105 overflow-y-hidden transition-all duration-150 rounded-xl"
+    :class="{
+      'bg-black scale-105': center === 1,
+      'bg-yellowBase text-black hover:text-white ': center !== 1,
+    }"
   >
-    <div class="space-y-2">
-      <h3 class="font-semibold text-yellowBase text-4xl">S/ {{ price }}</h3>
+    <div class="space-y-3 font-poppins">
       <h3 class="font-semibold text-2xl">{{ serviceName }}</h3>
+      <h3
+        class="font-bold flex group-hover:text-orange-400 text-5xl relative before:content-['S/.'] before:text-[18px] before:place-self-start before:pr-2"
+      >
+        {{ price }}
+      </h3>
+      <p class="font-semibold pt-5">Un solo pago</p>
     </div>
 
-    <ul class="space-y-3 mt-3">
-      <li v-for="(item, index) in features" :key="index" class="flex font-light">
-        <IconCheck class="text-yellowBase"></IconCheck>
+    <ul class="space-y-1 mt-3">
+      <li v-for="(item, index) in features" :key="index" class="flex font-light text-lg">
+        <IconCheck class="text-orange-400"></IconCheck>
         <p class="pl-2 first-letter:capitalize text-md font-semibold">{{ item }}</p>
       </li>
     </ul>
     <button
       type="submit"
-      class="border-4 group-hover:bg-blueBase group-hover:border-blueBase group-hover:text-white border-grayBase rounded-full px-6 py-1 mt-5 w-fit font-condensed tracking-wide text-lg text-grayBase font-semibold transition-colors duration-150"
+      class="group-hover:bg-white group-hover:border-black rounded-2xl py-4 mt-5 tracking-wide text-2xl font-bold transition-colors duration-150"
+      :class="{
+        ' bg-white text-black': center === 1,
+        'bg-black text-white': center !== 1,
+      }"
     >
-      ¡Lo quiero!
+      Empezar
     </button>
   </div>
 </template>
