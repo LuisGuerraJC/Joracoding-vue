@@ -23,7 +23,7 @@
         <h3 class="font-semibold">Síguenos</h3>
       </div>
     </div>
-    <div class="w-full bg-black text-white text-center">texto</div>
+    <div class="w-full bg-black text-white text-center">Copyright ©2023 Todos los derechos reservados joracoding</div>
   </footer>
 </template>
 
