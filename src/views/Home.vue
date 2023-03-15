@@ -6,7 +6,7 @@
     <ServiciosVue></ServiciosVue>
     <ComentariosVue></ComentariosVue>
     <!-- <PortafolioVue :topPadding="spacingTop"></PortafolioVue> -->
-    <ContactoVue :topPadding="spacingTop"></ContactoVue>
+    <ContactoVue></ContactoVue>
     <FooterVue></FooterVue>
   </div>
 </template>
@@ -21,15 +21,8 @@ import {
   ContactoVue,
   ComentariosVue,
   FooterVue,
-} from "@/components/sections";
+} from "@/components/Home-sections";
 import NavbarVue from "@/components/Navbar.vue";
-
-const height = ref<any>(undefined);
-
-const spacingTop = ref<number>(24);
-onMounted(() => {
-  spacingTop.value = height.value.$el.offsetHeight;
-});
 </script>
 
 <style scoped></style>

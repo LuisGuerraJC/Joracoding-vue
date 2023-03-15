@@ -26,21 +26,4 @@
   </section>
 </template>
 
-<script setup lang="ts">
-// import { useQuery } from "@tanstack/vue-query";
-// import SpinnerVue from "../Spinner.vue";
-// import type clientData from "../interfaces/clientData";
-
-// interface Props {
-//   topPadding: number;
-// }
-// defineProps<Props>();
-
-// const getClientsData = async (): Promise<clientData[]> => {
-//   const data = await fetch("/src/json/clientes.json");
-//   const json = await data.json();
-//   return json as clientData[];
-// };
-
-// const { isLoading, isError, data, error } = useQuery(["datosClientes"], getClientsData);
-</script>
+<script setup lang="ts"></script>

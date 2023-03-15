@@ -1,7 +1,7 @@
 interface designService {
     features: string;
     price: number;
-    serviceName: string;
+    name: string;
   }
 
 export default designService

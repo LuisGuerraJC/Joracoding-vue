@@ -17,19 +17,24 @@
           </button>
 
           <!-- para la navegacion -->
-          <div class="flex w-full space-x-2">
-            <div
-              v-for="number in [1, 2, 3, 4]"
-              :key="number"
-              class="h-1 w-14 flex"
-              :class="{ 'bg-yellowBase': number === 2, 'bg-black': number !== 2 }"
-            ></div>
-          </div>
         </aside>
         <div class="h-full grow flex justify-center items-center">
           <div class="bg-yellowBase w-[512px] h-[512px] rounded-full"></div>
         </div>
       </div>
     </main>
+
+    <h1 v-if="isLoading">Cargando</h1>
+    <h1 v-if="isError">{{ error }}</h1>
+    <div v-for="(item, index) in data" :key="index">
+      {{ item }}
+    </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import type Slide from "../../interfaces/slide";
+import { useQuery } from "@tanstack/vue-query";
+import { getSlides } from "@/api/getSlides";
+const { data, isLoading, isError, error } = useQuery(["Slides"], getSlides);
+</script>

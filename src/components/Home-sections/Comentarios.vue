@@ -11,14 +11,12 @@
           Nos cuentan un poco sobre los proyectos que realizamos
         </p>
       </div>
+
       <div class="flex justify-center">
         <div class="grid grid-cols-3 gap-7 grid-rows-1 w-fit">
-          <Comentario
-            v-for="(item, index) in items"
-            :key="index"
-            :name="item.name"
-            :content="item.content"
-          ></Comentario>
+          <h1 v-if="isLoading">cargando</h1>
+          <h1 v-if="isError">{{ error }}</h1>
+          <Comentario :data="data!"></Comentario>
         </div>
       </div>
     </div>
@@ -33,21 +31,9 @@
   </section>
 </template>
 <script setup lang="ts">
-import type comentario from "../interfaces/comentario";
 import Comentario from "../Comentario.vue";
+import { useQuery } from "@tanstack/vue-query";
+import { getComments } from "@/api/getComments";
 
-const items: comentario[] = [
-  {
-    name: "mayki alva cotrina",
-    content: "oe ya pe mano tu le metes los efectos sabor a sexo",
-  },
-  {
-    name: "Luis alberto guerra",
-    content: "oe mano quieres que haga la api otra vez xddd ",
-  },
-  {
-    name: "sr Paul",
-    content: "por que la verdad me costaria un huevo investigar otra vez y hacerlo BIEN",
-  },
-];
+const { data, isLoading, isError, error } = useQuery(["Comments"], getComments);
 </script>
