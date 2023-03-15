@@ -9,19 +9,13 @@
             ¡Tenemos planes pensados para tu emprendedor interno!
           </p>
         </div>
+
         <div class="flex justify-center space-x-7">
           <SpinnerVue v-if="isLoadingDev"></SpinnerVue>
           <h1 v-if="isErrorDev" class="text-redBase">{{ errorDev }}</h1>
-          <WbServiceVue
-            v-for="({ serviceName, features, price }, index) in devData"
-            :key="index"
-            :features="features"
-            :price="price"
-            :serviceName="serviceName"
-            :center="index"
-          >
-          </WbServiceVue>
+          <WbServicesVue :data="devData!"> </WbServicesVue>
         </div>
+
         <div class="flex w-full space-x-2 justify-center pt-16">
           <div
             v-for="number in [1, 2, 3, 4]"
@@ -39,22 +33,15 @@
             ¡Tenemos planes pensados para tu emprendedor interno!
           </p>
         </div>
+
         <div
           class="grid grid-cols-4 gap-6 justify-center items-center h-min justify-items-center"
         >
-          <!-- <h1 v-if="isLoadingDesign" class="text-redBase">"CARGANDO"</h1> -->
-
           <SpinnerVue v-if="isLoadingDesign"></SpinnerVue>
           <h1 v-if="isErrorDesign" class="text-redBase">{{ errorDesign }}</h1>
-          <DesignServiceVue
-            v-for="({ serviceName, features, price }, index) in designData"
-            :key="index"
-            :features="features"
-            :price="price"
-            :serviceName="serviceName"
-          >
-          </DesignServiceVue>
+          <DesignServicesVue :data="designData!"> </DesignServicesVue>
         </div>
+
         <div class="flex w-full space-x-2 justify-center pt-16">
           <div
             v-for="number in [1, 2, 3, 4]"
@@ -65,60 +52,27 @@
         </div>
       </div>
     </div>
-    <!-- 
-      <div class="w-2/12 flex items-center justify-center">
-        <ul class="space-y-3">
-          <li
-            class="border-[1px] border-grayBase bg-grayBase rounded-full py-1 px-5 text-center cursor-pointer font-condensed font-bold text-lg"
-            v-for="(item, index) in tipoServicio"
-            :key="index"
-            :class="{ 'bg-yellowBase': index === Number(!boolService) }"
-            @click="swipeServices(index)"
-          >
-            {{ item }}
-          </li>
-        </ul>
-      </div> -->
   </section>
 </template>
 
 <script setup lang="ts">
+// import { ref } from "vue";
 import { useQuery } from "@tanstack/vue-query";
-import { ref } from "vue";
-import DesignServiceVue from "../DesignService.vue";
-import WbServiceVue from "../WbService.vue";
+import DesignServicesVue from "../DesignServices.vue";
+import WbServicesVue from "../WbServices.vue";
 import SpinnerVue from "../Spinner.vue";
-import type devService from "../interfaces/devService";
-import type designService from "../interfaces/designService";
+// import type devService from "../../interfaces/devService";
+// import type designService from "../../interfaces/designService";
 
-const boolService = ref<number>(1);
-const swipeServices = (index: number) => {
-  //index 1 apunta a servicios de diseño grafico
-  if (index === 1 && boolService.value === 1) boolService.value = 0;
-  //index 0 apunta a servicios de desarrollo web
-  if (index === 0 && boolService.value === 0) boolService.value = 1;
-};
+import { getDesignData } from "@/api/getDesignData";
+import { getDevData } from "@/api/getDevData";
 
-const tipoServicio: string[] = ["Desarrollo Web", "Diseño Gráfico"];
-
-const getDevData = async (): Promise<devService[]> => {
-  const data = await fetch("/src/json/devServices.json");
-  const json = await data.json();
-
-  return json as devService[];
-};
 const {
   data: devData,
   isLoading: isLoadingDev,
   isError: isErrorDev,
   error: errorDev,
 } = useQuery(["webServices"], getDevData);
-
-const getDesignData = async (): Promise<designService[]> => {
-  const data = await fetch("/src/json/designServices.json");
-  const json = await data.json();
-  return json as designService[];
-};
 
 const {
   data: designData,

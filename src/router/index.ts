@@ -1,7 +1,7 @@
 import Home from '@/views/Home.vue'
 // import Login from '@/views/Login.vue'
 // import Board from '@/views/Board.vue'
-import { InicioVue, ServiciosVue, NosotrosVue, PortafolioVue, ContactoVue } from '@/components/sections';
+import { InicioVue, ServiciosVue, NosotrosVue, PortafolioVue, ContactoVue } from '@/components/Home-sections';
 import {createRouter, createWebHashHistory} from 'vue-router';
 
 const router = createRouter({
