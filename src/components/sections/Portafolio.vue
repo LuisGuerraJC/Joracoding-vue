@@ -22,7 +22,7 @@
       <div class="w-3/12 flex items-center">
         <ul class="space-y-3">
           <li
-            class="border-[1px] border-grayBase bg-grayBase rounded-full py-1 px-5 text-center cursor-pointer font-condensed font-bold text-lg"
+            class="border-[1px] border-grayBase bg-grayBase rounded-full py-1 px-5 text-center cursor-pointer font-poppins font-bold text-lg"
             :class="{ 'bg-yellowBase': index === Number(!boolService) }"
             v-for="(item, index) in tipoServicio"
             :key="index"
