@@ -1,41 +1,41 @@
 [
     {
-      "serviceName": "Redes Sociales",
+      "name": "Redes Sociales",
       "price": 120,
       "features": "lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur amet"
     },
     {
-      "serviceName": "Logos",
+      "name": "Logos",
       "price": 1260,
       "features": "lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur ipsum"
     },
     {
-      "serviceName": "Tarjeta de presentación",
+      "name": "Tarjeta de presentación",
       "price": 60,
       "features": "lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor"
     },
     {
-      "serviceName": "Tarjeta de presentación",
+      "name": "Tarjeta de presentación",
       "price": 60,
       "features": "lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur"
     },
     {
-      "serviceName": "Flyers",
+      "name": "Flyers",
       "price": 90,
       "features": "lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur"
     },
     {
-      "serviceName": "Brochure",
+      "name": "Brochure",
       "price": 120,
       "features": "lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur"
     },
     {
-      "serviceName": "Hoja membretada",
+      "name": "Hoja membretada",
       "price": 60,
       "features": "lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur"
     },
     {
-      "serviceName": "Hoja membretada",
+      "name": "Hoja membretada",
       "price": 60,
       "features": "lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur lorem ipsum dolor, consetetur"
     }

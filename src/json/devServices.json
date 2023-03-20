@@ -1,6 +1,6 @@
 [
     {
-      "serviceName": "Básico",
+      "name": "Básico",
       "price": 599,
       "features": [
         "Diseño moderno",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "serviceName": "Éstandar",
+      "name": "Éstandar",
       "price": 899,
       "features": [
         "Diseño moderno",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "serviceName": "Premium",
+      "name": "Premium",
       "price": 1500,
       "features": [
         "Diseño moderno",
