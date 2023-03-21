@@ -8,7 +8,7 @@
       <p class="font-semibold text-xl">{{ name }}</p>
       <p class="text-sm">{{ features }}</p>
     </div>
-    <p class="ml-auto w-fit text-sm font-bold">Conoce más...</p>
+    <p class="ml-auto w-fit text-sm font-bold">Saber más</p>
   </div>
 </template>
 

@@ -3,8 +3,8 @@
     <nav class="w-full max-w-full flex justify-between px-20 pt-11 pb-5 mx-auto">
       <div class="flex grow-0 w-1/4">
         <!-- <img src="" alt="Logo"> -->
-        <h2 class="font-condensed text-black font-semibold text-3xl">
-          JORA<span class="text-yellowBase">CODING</span>
+        <h2 class="text-black font-logo text-3xl">
+          jora<span class="text-yellowBase">coding</span>
         </h2>
       </div>
       <ul

@@ -1,5 +1,5 @@
 <template>
-  <section id="Nosotros" class="bg-black flex w-full">
+  <section id="Nosotros" class="bg-black h-screen flex w-full">
     <div class="font-poppins flex w-full justify-center">
       <div class="max-w-7xl w-full flex">
         <div class="flex justify-center items-center w-[60%]">

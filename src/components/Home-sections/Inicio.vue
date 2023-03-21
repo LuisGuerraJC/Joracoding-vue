@@ -1,8 +1,8 @@
 <template>
   <section id="Inicio">
-    <main class="h-auto w-full bg-white flex justify-center">
+    <main class="h-screen w-full bg-white flex justify-center">
       <!-- bg-base -->
-      <div class="max-w-7xl flex w-10/12 items-center">
+      <div class="max-w-7xl h-full flex w-10/12 items-center">
         <aside class="font-poppins max-w-xl space-y-7 ml-4 text-black">
           <h1 class="text-5xl font-bold leading-[1.1]">Diseño Web a Medida</h1>
 

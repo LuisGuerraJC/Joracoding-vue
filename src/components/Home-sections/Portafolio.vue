@@ -4,7 +4,7 @@
     class="min-h-screen h-auto bg-bg-base overflow-hidden flex w-full"
     :style="{ paddingTop: topPadding + 'px' }"
   >
-    <div class="my-14 flex w-full">
+    <div class="flex w-full">
       <div class="w-1/12"></div>
 
       <div v-if="boolService" class="flex justify-center w-9/12">

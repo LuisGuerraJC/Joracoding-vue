@@ -1,8 +1,8 @@
 <template>
   <section id="Contacto" class="h-auto overflow-hidden flex w-full">
     <div class="w-full max-w-7xl my-14 mx-auto">
-      <div class="max-w-4xl text-center mx-auto">
-        <h1 class="text-black text-5xl font-semibold">
+      <div class="max-w-4xl text-center mx-auto py-16">
+        <h1 class="text-black text-5xl font-semibold py-5">
           <span class="text-yellowBase">¡Hola!</span> Muchas gracias
         </h1>
         <p class="text-lg">
