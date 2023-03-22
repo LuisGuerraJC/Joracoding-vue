@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
+    "./public/fonts/AtomicMD.tff",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "./src/components/**/*.{vue,js,ts,jsx,tsx}",
 
@@ -23,8 +24,8 @@ module.exports = {
       },
       fontFamily:{
         condensed:"'Oswald', sans-serif",
-        poppins:"'Poppins', sans-serif"
-
+        poppins:"'Poppins', sans-serif",
+        logo:"'AtomicMD', sans-serif"
       }
     }
   },

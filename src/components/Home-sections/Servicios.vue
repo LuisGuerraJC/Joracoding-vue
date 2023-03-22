@@ -3,20 +3,20 @@
     <div class="w-full my-12 max-w-7xl">
       <div class="flex flex-col justify-center">
         <!-- <h1 v-if="isLoadingDev" class="text-redBase">"CARGANDO"</h1> -->
-        <div class="font-poppins text-center space-y-4">
+        <div class="font-poppins text-center space-y-3">
           <h2 class="font-semibold text-5xl">Explora nuestros planes</h2>
           <p class="text-lg font-light">
             ¡Tenemos planes pensados para tu emprendedor interno!
           </p>
         </div>
 
-        <div class="flex justify-center space-x-7">
+        <div class="flex justify-center space-x-7 py-16">
           <SpinnerVue v-if="isLoadingDev"></SpinnerVue>
           <h1 v-if="isErrorDev" class="text-redBase">{{ errorDev }}</h1>
           <WbServicesVue :data="devData!"> </WbServicesVue>
         </div>
 
-        <div class="flex w-full space-x-2 justify-center pt-16">
+        <div class="flex w-full space-x-2 justify-center pt-16 py-16">
           <div
             v-for="number in [1, 2, 3, 4]"
             :key="number"
