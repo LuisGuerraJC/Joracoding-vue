@@ -4,6 +4,7 @@
     <InicioVue></InicioVue>
     <NosotrosVue></NosotrosVue>
     <ServiciosVue></ServiciosVue>
+    <FaqVue></FaqVue>
     <ComentariosVue></ComentariosVue>
     <!-- <PortafolioVue :topPadding="spacingTop"></PortafolioVue> -->
     <ContactoVue></ContactoVue>
@@ -18,6 +19,7 @@ import {
   NosotrosVue,
   PortafolioVue,
   ServiciosVue,
+  FaqVue,
   ContactoVue,
   ComentariosVue,
   FooterVue,

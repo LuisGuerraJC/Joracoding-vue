@@ -26,7 +26,8 @@ module.exports = {
         condensed:"'Oswald', sans-serif",
         poppins:"'Poppins', sans-serif",
         logo:"'AtomicMD', sans-serif"
-      }
+      },
+    
     }
   },
   plugins: [],

@@ -25,6 +25,7 @@
           ></div>
         </div>
       </div>
+      <TecnologiasVue></TecnologiasVue>
 
       <div class="flex flex-col w-full">
         <div class="font-poppins text-center space-y-4">
@@ -66,6 +67,7 @@ import SpinnerVue from "../Spinner.vue";
 
 import { getDesignData } from "@/api/getDesignData";
 import { getDevData } from "@/api/getDevData";
+import TecnologiasVue from "../Tecnologias.vue";
 
 const {
   data: devData,
