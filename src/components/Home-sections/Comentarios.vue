@@ -19,14 +19,14 @@
           <Comentario :data="data!"></Comentario>
         </div>
       </div>
-    </div>
-    <div class="flex w-full space-x-2 justify-center pt-16">
-      <div
-        v-for="number in [1, 2, 3, 4]"
-        :key="number"
-        class="h-2 w-16 flex"
-        :class="{ 'bg-yellowBase': number === 2, 'bg-black': number !== 2 }"
-      ></div>
+      <div class="flex w-full space-x-2 justify-center pt-16">
+        <div
+          v-for="number in [1, 2, 3, 4]"
+          :key="number"
+          class="h-2 w-16 flex"
+          :class="{ 'bg-yellowBase': number === 2, 'bg-black': number !== 2 }"
+        ></div>
+      </div>
     </div>
   </section>
 </template>
