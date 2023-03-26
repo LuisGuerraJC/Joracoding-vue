@@ -8,17 +8,26 @@
       </h2>
     </div>
     <div class="flex w-full space-x-8 overflow-x-scroll">
-      <div
-        class="w-36 h-36 rounded-lg bg-bg-base shrink-0"
-        v-for="(item, index) in num"
-        :key="index"
-      ></div>
+      <div v-for="(tec, index) in tecnologias" :key="index">
+        <Icon class="h-14 w-14 m-3" :icon="tec" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { Icon } from "@iconify/vue";
 
-const num = ref<number>(9);
+const tecnologias = ref([
+  "vscode-icons:file-type-html",
+  "vscode-icons:file-type-css",
+  "logos:sass",
+  "logos:javascript",
+  "logos:react",
+  "cib:next-js",
+  "logos:vue",
+  "cib:nuxt-js",
+  "logos:wordpress-icon",
+]);
 </script>
