@@ -1,7 +1,7 @@
 <template>
   <section
     id="Portafolio"
-    class="min-h-screen h-auto bg-bg-base overflow-hidden flex w-full"
+    class="min-h-screen h-auto bg-bg-base overflow-hidden flex w-full container mx-auto"
     :style="{ paddingTop: topPadding + 'px' }"
   >
     <div class="flex w-full">
@@ -15,7 +15,11 @@
         <div
           class="grid grid-cols-4 grid-rows-3 gap-3 justify-center items-center max-w-3xl w-full h-min"
         >
-          <div v-for="index in 12" :key="index" class="bg-slate-600 aspect-[2/1]"></div>
+          <div
+            v-for="index in 12"
+            :key="index"
+            class="bg-slate-600 aspect-[2/1]"
+          ></div>
         </div>
       </div>
 

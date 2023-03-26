@@ -1,9 +1,9 @@
 <template>
   <section id="Servicios" class="h-auto flex w-full justify-center">
-    <div class="w-full my-12 max-w-7xl">
+    <div class="w-full my-12 max-w-7xl container mx-auto">
       <div class="flex flex-col justify-center">
         <!-- <h1 v-if="isLoadingDev" class="text-redBase">"CARGANDO"</h1> -->
-        <div class="font-poppins text-center space-y-3">
+        <div class="font-dmsans text-center space-y-3">
           <h2 class="font-semibold text-5xl">Explora nuestros planes</h2>
           <p class="text-lg font-light">
             ¡Tenemos planes pensados para tu emprendedor interno!
@@ -28,7 +28,7 @@
       <TecnologiasVue></TecnologiasVue>
 
       <div class="flex flex-col w-full">
-        <div class="font-poppins text-center space-y-4">
+        <div class="font-dmsans text-center space-y-4">
           <h2 class="font-semibold text-5xl">Explora nuestros planes</h2>
           <p class="text-lg font-light">
             ¡Tenemos planes pensados para tu emprendedor interno!

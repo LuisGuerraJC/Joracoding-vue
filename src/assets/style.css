@@ -2,32 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* FUENTE EXTERNA PARA EL LOGO*/
 
 @font-face {
-    font-family: 'AtomicMD';
-    src: url('../../public/fonts/AtomicMD.ttf') format('truetype');
-    
-  }
+  font-family: "AtomicMD";
+  src: url("../../public/fonts/AtomicMD.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../../public/fonts/DMSans-Regular.ttf") format("truetype");
+}
 
 /* DISEÑO DEL SCROLL*/
 
-  ::-webkit-scrollbar {
-    width: 1vw; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
-    background-color: rgb(255, 253, 253);
-  }
-  
-  /* TO STYLE THE SCROLLBAR TRACK */
-  ::-webkit-scrollbar-track {
-    background-color: transparent; /* THIS WILL SET THE COLOR OF THE SCROLLBAR TRACK */
-  }
-  
-  /* TO STYLE THE SCROLLBAR THUMB */
-  ::-webkit-scrollbar-thumb {
-    background-color: #FBC100;
-    border: 0.3vw solid rgb(255, 253, 253);
-    border-radius: 5vw;
-    
-    
-  }  
+::-webkit-scrollbar {
+  width: 1vw; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
+  background-color: rgb(255, 253, 253);
+}
+
+/* TO STYLE THE SCROLLBAR TRACK */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* THIS WILL SET THE COLOR OF THE SCROLLBAR TRACK */
+}
+
+/* TO STYLE THE SCROLLBAR THUMB */
+::-webkit-scrollbar-thumb {
+  background-color: #fbc100;
+  border: 0.3vw solid rgb(255, 253, 253);
+  border-radius: 5vw;
+}

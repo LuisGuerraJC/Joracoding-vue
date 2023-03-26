@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-center items-center p-12 rounded-lg shadow-lg shadow-gray-300"
+    class="container mx-auto flex-col items-center p-12 rounded-lg shadow-lg shadow-gray-300"
   >
     <div class="text-start w-full mb-4">
       <h2 class="w-full text-black text-5xl font-semibold">Contacto</h2>
@@ -47,7 +47,7 @@
         <input
           type="submit"
           value="Enviar"
-          class="bg-black font-semibold text-xl tracking-wide text-white py-4 w-full font-poppins rounded-lg"
+          class="bg-black font-semibold text-xl tracking-wide text-white py-4 w-full font-dmsans rounded-lg"
         />
       </div>
     </form>

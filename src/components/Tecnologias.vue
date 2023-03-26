@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <div class="font-poppins text-center space-y-3 self-start">
+    <div class="font-dmsans text-center space-y-3 self-start">
       <h2
         class="font-semibold text-5xl relative before:content-[''] before:w-2 before:h-[80%] before:bg-yellowBase before:absolute before:top-3 before:left-1 pl-6"
       >

@@ -1,14 +1,14 @@
 <template>
-  <section id="Inicio">
-    <main class="h-screen w-full bg-white flex justify-center">
+  <section id="Inicio " class="container mx-auto">
+    <main class="h-screen bg-white flex justify-center">
       <!-- bg-base -->
       <div class="max-w-7xl h-full flex w-10/12 items-center">
-        <aside class="font-poppins max-w-xl space-y-7 ml-4 text-black">
+        <aside class="font-dmsans max-w-xl space-y-7 ml-4 text-black">
           <h1 class="text-5xl font-bold leading-[1.1]">Diseño Web a Medida</h1>
 
           <p class="text-xl font-light max-w-lg">
-            Ofrecemos servicios de diseño web profesionales con soluciones única a medida
-            para mejorar la presencia de su empresa.
+            Ofrecemos servicios de diseño web profesionales con soluciones única
+            a medida para mejorar la presencia de su empresa.
           </p>
           <button
             class="bg-black rounded-md px-9 py-3 text-white text-xl flex items-center"
@@ -36,5 +36,8 @@
 import type Slide from "../../interfaces/slide";
 import { useQuery } from "@tanstack/vue-query";
 import { getSlides } from "@/api/getSlides";
+
+import "swiper/css";
+
 const { data, isLoading, isError, error } = useQuery(["Slides"], getSlides);
 </script>

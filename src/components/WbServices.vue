@@ -8,7 +8,7 @@
       'bg-yellowBase text-black hover:text-white ': index !== 1,
     }"
   >
-    <div class="space-y-3 font-poppins">
+    <div class="space-y-3 font-dmsans">
       <h3 class="font-semibold text-2xl">{{ name }}</h3>
       <h3
         class="font-bold flex group-hover:text-orange-400 text-5xl relative before:content-['S/.'] before:text-[18px] before:place-self-start before:pr-2"
